@@ -1,0 +1,6 @@
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Utilerias\bin\Debug\Utilerias.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Utilerias\bin\Debug\Utilerias.pdb
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Utilerias\bin\Debug\log4net.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Utilerias\obj\Debug\Utilerias.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Utilerias\obj\Debug\Utilerias.pdb
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Utilerias\obj\Debug\Utilerias.csprojResolveAssemblyReference.cache

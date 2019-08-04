@@ -1,0 +1,66 @@
+﻿@model  Modelo.Usuario_Mod
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="wrapper wrapper-full-page">    
+    <div class="full-page login-page" filter-color="black"  data-image="../../material-dashboard/assets/img/financiera.jpg">
+        <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+        <div class="content" data-color="blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                        @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { id = "LoginValidation" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="card card-login card-hidden">
+                                <div class="card-header text-center" data-background-color="orange">
+                                    <h4 class="card-title">Login</h4>                                    
+                                </div>
+                                <div class="card-content">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">face</i>
+                                        </span>
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">Usuario <star>*</star>
+                                            </label>                                            
+                                            @Html.TextBoxFor(u => u.Usuario_Login, new { id="txtUsuario", @class = "form-control", required = "true"})
+                                            @Html.ValidationMessageFor(u => u.Usuario_Login)
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">lock_outline</i>
+                                        </span>
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">Password <star>*</star></label>                                            
+                                            @Html.PasswordFor(u => u.Contrasenia, new { id = "txtContrasenia", @class = "form-control", required = "true" })
+                                            @Html.ValidationMessageFor(u => u.Contrasenia)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer text-center">
+                                    <button type="submit" class="btn btn-default btn-simple btn-wd btn-lg">Acceder</button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">                
+                <p class="copyright pull-right">
+                    &copy;
+                    <script>
+                            document.write(new Date().getFullYear())
+                    </script>
+                    <a href="http://www.creative-tim.com/">Casa de Empeño derechos reservados
+                </p>
+            </div>
+        </footer>
+    </div>
+</div>

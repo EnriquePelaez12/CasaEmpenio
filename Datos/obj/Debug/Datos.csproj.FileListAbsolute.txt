@@ -1,0 +1,7 @@
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Datos\bin\Debug\Datos.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Datos\bin\Debug\Datos.pdb
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Datos\bin\Debug\Modelo.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Datos\bin\Debug\Modelo.pdb
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Datos\obj\Debug\Datos.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Datos\obj\Debug\Datos.pdb

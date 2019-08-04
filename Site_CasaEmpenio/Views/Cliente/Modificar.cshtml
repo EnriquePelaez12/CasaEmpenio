@@ -1,0 +1,180 @@
+﻿@model  Modelo.Cliente_Mod
+@{
+    ViewBag.Title = "Modificar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts{
+
+    <script>
+        $(document).ready(function () {
+            var oModelo = @Html.Raw(Json.Encode(Model));
+            CargarDatos(oModelo);
+
+            function CargarDatos(oModelo) {
+                $('#txtId').val(oModelo.Cliente_Id); $('#txtId').change();
+                $('#txtNombre').val(oModelo.Cliente_Nombre); $('#txtNombre').change();
+                $('#txtApaterno').val(oModelo.Cliente_Apellido_Paterno); $('#txtApaterno').change();
+                $('#txtAmaterno').val(oModelo.Cliente_Apellido_Materno); $('#txtAmaterno').change();
+                $('#txtDireccion').val(oModelo.Cliente_Direccion); $('#txtDireccion').change();
+                $('#txtEmail').val(oModelo.Cliente_Email); $('#txtEmail').change();
+                $('#txtCelular').val(oModelo.Cliente_Celular); $('#txtCelular').change();
+                $('#txtTelefono').val(oModelo.Cliente_Telefono); $('#txtTelefono').change();
+                $('#txtCotitular').val(oModelo.Cotitular); $('#txtCotitular').change();                
+                $('#ckbSexo').prop('checked', oModelo.Sexo_Id == 1 ? true: false );
+            }
+        });
+    </script>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <form id="RegisterValidation" action="#" method="">
+                <div class="card-header card-header-icon" data-background-color="orange">
+                    <i class="material-icons">person</i>
+                </div>                
+                <div class="card-content">
+                    <h4 class="card-title">Modificar Cliente</h4>                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">
+                                    Id
+                                </label>
+                                <input class="form-control" id="txtId" name="txtId" type="text" required="true" disabled="disabled" value="100" />
+                            </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">
+                                    Nombre <small>*</small>
+                                </label>
+                                <input class="form-control" id="txtNombre" name="txtNombre" type="text" required="true" />
+                            </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">
+                                    Apellido Paterno <small>*</small>
+                                </label>
+                                <input class="form-control" id="txtApaterno" name="txtApaterno"  type="text" required="true" />
+                            </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">
+                                    Apellido Materno <small>*</small>
+                                </label>
+                                <input class="form-control" id="txtAmaterno" name="txtAmaterno" type="text" required="true" />
+                            </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">
+                                    Dirección <small>*</small>
+                                </label>
+                                <input class="form-control" id="txtDireccion" name="txtDireccion" type="text" required="true" />
+                            </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">
+                                    Email <small>*</small>
+                                </label>
+                                <input class="form-control" id="txtEmail" name="txtEmail" type="email" required="true" />
+                            </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">
+                                    Célular <small>*</small>
+                                </label>
+                                <input class="form-control" id="txtCelular" name="txtCelular" type="text" required="true" />
+                            </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">
+                                    Teléfono <small>*</small>
+                                </label>
+                                <input class="form-control" id="txtTelefono" name="txtTelefono" type="text" required="true" />
+                            </div>                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">
+                                        Cotitular <small>*</small>
+                                    </label>
+                                    <input class="form-control" id="txtCotitular" name="txtCotitular" type="text" required="true" />
+                                </div>
+                            </div>                           
+                            <div class="col-md-12">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">
+                                        Estado <small>*</small>
+                                    </label>
+                                    <select id="ddlEstado" name="ddlEstado" class="form-control">
+                                        <option disabled="" selected=""></option>
+                                        <option value="Afghanistan"> Afghanistan </option>                                                                           
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">
+                                        Municipio <small>*</small>
+                                    </label>
+                                    <select id="ddlMunicipio" name="ddlMunicipio" class="form-control">
+                                        <option disabled="" selected=""></option>
+                                        <option value="Afghanistan"> Afghanistan </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">
+                                        Colonia <small>*</small>
+                                    </label>
+                                    <select id="ddlColonia" name="ddlColonia" class="form-control">
+                                        <option disabled="" selected=""></option>
+                                        <option value="Afghanistan"> Afghanistan </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">
+                                        Ocupación <small>*</small>
+                                    </label>
+                                    <select id="ddlOcupacion" name="ddlOcupacion" class="form-control">
+                                        <option disabled="" selected=""></option>
+                                        <option value="Afghanistan"> Afghanistan </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">
+                                        Estado Civil <small>*</small>
+                                    </label>
+                                    <select id="ddlEstadoCivil" name="ddlEstadoCivil" class="form-control">
+                                        <option disabled="" selected=""></option>
+                                        <option value="Afghanistan"> Afghanistan </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">
+                                        Sexo <small>*</small>
+                                    </label>
+                                    <div class="checkbox pull-left">
+                                        <label>
+                                            <input id="ckbSexo" type="checkbox" name="ckbSexo"> Hombre
+                                        </label>
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>                                                                        
+                    </div>
+                    <div class="col-md-12">
+                        <div class="category form-category">
+                            <small>*</small> Campos requeridos
+                        </div>
+                        <div class="form-footer text-right">
+                            <button type="submit" class="btn btn-primary btn-fill">Modificar</button>
+                        </div>
+                    </div>                                        
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

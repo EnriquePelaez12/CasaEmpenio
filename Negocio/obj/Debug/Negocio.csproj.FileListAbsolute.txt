@@ -1,0 +1,9 @@
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\bin\Debug\Negocio.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\bin\Debug\Negocio.pdb
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\obj\Debug\Negocio.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\obj\Debug\Negocio.pdb
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\bin\Debug\Datos.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\bin\Debug\Modelo.dll
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\bin\Debug\Datos.pdb
+c:\users\irvin\documents\visual studio 2017\Projects\CasaEmpenio\Negocio\bin\Debug\Modelo.pdb

@@ -1,0 +1,41 @@
+﻿@*@section scripts {*@
+    
+
+    <script src="~/Scripts/Comun/Constantes.js"></script>
+    <script src="~/Scripts/Comun/Comun.js"></script>
+    <script src="~/Scripts/Comun/Tabla.js"></script>
+    <script>
+
+
+            $(document).ready(function () {
+
+                var tabla = null;
+                //$('.card .material-datatables label').addClass('form-group');
+
+                //*************************                
+                CargarEncabezado("@Model.Tipo_Catalogo.ToString()");
+
+                function CargarEncabezado(tipo) {                   
+                    switch (tipo) {
+                        case 'CLIENTE':
+                            tabla = new Tabla("CLIENTE", "Clientes");
+                            $('#btnIdDescripcion').on("click", consultar);
+                        default:
+                    }
+                }
+
+                function consultar() {                    
+                    var parametros = {
+                        'pCliente_Id': parseInt($("#txtIdDescripcion").val()) ? parseInt($("#txtIdDescripcion").val()) : 0,
+                        'pCliente_Nombre': !parseInt($("#txtIdDescripcion").val()) ? $("#txtIdDescripcion").val() : ""
+                    };
+                    tabla.cliente_Busqueda(parametros);
+                } 
+
+                //$("form").on("submit", function (event) {
+                //    event.preventDefault();
+                //});
+                $("form").on("submit", false);
+            });
+    </script>
+@*}*@
